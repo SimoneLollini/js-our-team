@@ -28,3 +28,36 @@
 // Name: Barbara Ramos
 // Role: Grafic designer
 // Image: barbara-ramos-graphic-designer.jpg
+
+
+
+// MILESTONE 0: Creare l’array di oggetti con le informazioni fornite.
+
+team = [
+    {
+        name: 'Wayne Barnett',
+        role: 'Founder & CEO',
+        img: 'wayne-barnett-founder-ceo.jpg',
+    }, {
+        name: 'Angela',
+        Role: 'Chief Editor',
+        Image: 'angela-caroll-chief-editor.jpg',
+    }, {
+        name: 'Waleter gordon',
+        Role: 'Chief Editor',
+        Image: 'walter-gordon-office-manager.jpg',
+    }, {
+        name: 'Waleter gordon',
+        Role: 'Chief Editor',
+        Image: 'angela-lopez-social-media-manager.jpg',
+    }, {
+        name: 'Scott Estrada',
+        Role: 'Developer',
+        Image: 'scott-estrada-developer.jpg',
+    }, {
+        name: 'Barbara Ramos',
+        Role: 'Grafic designer',
+        Image: 'barbara-ramos-graphic-designer.jpg',
+    }
+]
+console.log(team);
