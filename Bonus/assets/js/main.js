@@ -71,18 +71,28 @@ for (let i = 0; i < team.length; i++) {
     for (const key in person) {
         const personKeys = person[key];
         // console.log(personKeys);
-        // rowElement.insertAdjacentElement('beforeend', colEl)
-        // rowElement.insertAdjacentHTML('beforeend', personKeys)
     }
     // MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
+    // const colEl = document.createElement('div')
+    // const h3El = document.createElement('h3')
+    // const h6El = document.createElement('h6')
+    // const imgEl = document.createElement('img')
+    // colEl.classList.add('col')
+    // rowElement.append(colEl)
+    // colEl.append(h3El, h6El, imgEl)
+    // h3El.append(person.name)
+    // h6El.append(person.role)
+    // imgEl.setAttribute("src", `./assets/img/${person.img}`);
+    generateMarkup(person)
+}
+
+function generateMarkup(person) {
     const colEl = document.createElement('div')
     const h3El = document.createElement('h3')
     const h6El = document.createElement('h6')
     const imgEl = document.createElement('img')
-
     colEl.classList.add('col')
     rowElement.append(colEl)
-    // colEl.append(Object.values(person))
     colEl.append(h3El, h6El, imgEl)
     h3El.append(person.name)
     h6El.append(person.role)
@@ -90,6 +100,5 @@ for (let i = 0; i < team.length; i++) {
 }
 
 
-//creo un array di tutte le key img successivamente creo un ciclo for ed associo ad ogni momento di i un img
 
 
