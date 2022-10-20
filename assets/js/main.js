@@ -29,7 +29,7 @@
 // Role: Grafic designer
 // Image: barbara-ramos-graphic-designer.jpg
 
-
+const containerElement = document.querySelector('.container')
 
 // MILESTONE 0: Creare l’array di oggetti con le informazioni fornite.
 
@@ -40,24 +40,48 @@ team = [
         img: 'wayne-barnett-founder-ceo.jpg',
     }, {
         name: 'Angela',
-        Role: 'Chief Editor',
-        Image: 'angela-caroll-chief-editor.jpg',
+        role: 'Chief Editor',
+        img: 'angela-caroll-chief-editor.jpg',
     }, {
         name: 'Waleter gordon',
-        Role: 'Chief Editor',
-        Image: 'walter-gordon-office-manager.jpg',
+        role: 'Chief Editor',
+        img: 'walter-gordon-office-manager.jpg',
     }, {
         name: 'Waleter gordon',
-        Role: 'Chief Editor',
-        Image: 'angela-lopez-social-media-manager.jpg',
+        role: 'Chief Editor',
+        img: 'angela-lopez-social-media-manager.jpg',
     }, {
         name: 'Scott Estrada',
-        Role: 'Developer',
-        Image: 'scott-estrada-developer.jpg',
+        role: 'Developer',
+        img: 'scott-estrada-developer.jpg',
     }, {
         name: 'Barbara Ramos',
-        Role: 'Grafic designer',
-        Image: 'barbara-ramos-graphic-designer.jpg',
+        role: 'Grafic designer',
+        img: 'barbara-ramos-graphic-designer.jpg',
     }
 ]
 console.log(team);
+
+
+// MILESTONE 1: Stampare su console le informazioni di nome, ruolo e la stringa della foto
+
+for (let i = 0; i < team.length; i++) {
+    const person = team[i];
+    // console.log(person);
+    for (const key in person) {
+        const personKeys = person[key];
+        // console.log(personKeys);
+        // containerElement.insertAdjacentElement('beforeend', cardEl)
+        // containerElement.insertAdjacentHTML('beforeend', personKeys)
+    }
+    const cardEl = document.createElement('div')
+    cardEl.classList.add('card')
+    containerElement.append(cardEl)
+    cardEl.append(Object.values(person))
+}
+
+
+
+// MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+
